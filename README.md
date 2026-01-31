@@ -38,11 +38,12 @@ A high-performance, utilitarian trading journal and analytics platform built wit
 
 ### 2. Environment Variables
 
-Create a `.env` file in the root directory (or set these in your deployment platform):
+Create a `.env` file in the root directory (or set these in your deployment platform).
+**Note:** Vite requires environment variables to start with `VITE_`.
 
 ```env
-REACT_APP_SUPABASE_URL=your_project_url_here
-REACT_APP_SUPABASE_ANON_KEY=your_anon_key_here
+VITE_SUPABASE_URL=your_project_url_here
+VITE_SUPABASE_ANON_KEY=your_anon_key_here
 ```
 
 *Note: The application includes a fallback configuration for demo purposes, but you should configure your own for private data persistence.*
@@ -74,7 +75,7 @@ The frontend is completely decoupled from the backend and can be deployed to any
     *   Build Command: `npm run build`
     *   Output Directory: `dist` (or `build`)
 4.  **Environment Variables**:
-    *   Add `REACT_APP_SUPABASE_URL` and `REACT_APP_SUPABASE_ANON_KEY` in the hosting dashboard settings.
+    *   Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in the hosting dashboard settings.
 5.  Deploy.
 
 ## Analytics Implementation
